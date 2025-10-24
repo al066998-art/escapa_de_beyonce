@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Escapa de Beyonce</h1>
+    <div id="game-area">
+        <div id="player" class="character"></div>
+        <div id="beyonce" class="character"></div>
+    </div>
+
+    <label for="velocidad">velocidad:</label>
+    <input type="range" id="velocidad" name="velocidad" min="0" max="2" step="0.01" value="1">
+    <p>Velocidad actual: <span id="valorVelocidad">1</span></p>
+
+    <label for="velocidadjugador">velocidad:</label>
+    <input type="range" id="velocidadjugador" name="velocidad" min="0" max="60"  value="40">
+    <p>Velocidad actual: <span id="valorVelocidadjugador">40</span></p>
+
+    <audio id="musica" src="assets/marrycritmass.mp3" type="audio/mpeg" autoplay loop></audio>
+    <label for="volumen">Volumen</label>
+    <input type="range" id="volumen" min="0" max="1" step="0.01" value="0.5">
+
+    <script type="text/javascript" src="assets/index.js"></script>
+</body>
+</html>
