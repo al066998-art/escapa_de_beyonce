@@ -12,6 +12,7 @@ const sliderjugador = document.getElementById('velocidadjugador')
 const valorjugador = document.getElementById('valorVelocidadjugador')
 
 
+
 let playerPosition = {x: 100, y: 100};
 let beyoncePosition = {x: 700, y: 700};
 
@@ -29,6 +30,9 @@ window.addEventListener('keydown', (event) => {
      if (!gameStarted) {
         gameStarted = true;
         gameloop();
+    }
+    if (audio.paused) {
+        audio.play().catch(err => console.log("Autoplay bloqueado:", err));
     }
     switch (event.key) {
         case 'ArrowUp' :
